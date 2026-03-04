@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0a0f1e;
+    color: #e0e0e0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: #1a1f2f;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,150,255,0.2);
+    border: 1px solid #2a2f40;
+}
+
+.google-btn {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.google-btn:hover {
+    background: #3367d6;
+}
+
+.hidden { display: none !important; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1a1f2f;
+    border-bottom: 2px solid #2a5f7a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5fd9ff;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background: #121725;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 1px solid #2a5f7a;
+    color: #a0b0c0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: #1e3f5a;
+    color: white;
+    border-color: #5fd9ff;
+}
+
+#content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    min-height: 300px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #1a1f2f;
+    border-top: 2px solid #2a5f7a;
+    display: flex;
+    gap: 10px;
+}
+
+#command-input {
+    flex: 1;
+    padding: 15px;
+    background: #0d1222;
+    border: 1px solid #2a5f7a;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+footer button {
+    padding: 0 30px;
+    background: #2a5f7a;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer button:hover {
+    background: #1f4a61;
+}
+
+.card {
+    background: #1a1f2f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #5fd9ff;
+}

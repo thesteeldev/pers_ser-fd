@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeFlow · Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="login-screen" class="flex-center">
+        <div class="login-card">
+            <h1>⚡ LifeFlow</h1>
+            <p>Your personal command centre</p>
+            <button onclick="login()" class="google-btn">
+                <i class="fab fa-google"></i> Sign in with Google
+            </button>
+        </div>
+    </div>
+
+    <div id="app-screen" class="hidden">
+        <header>
+            <div class="logo">⚡ LifeFlow</div>
+            <div class="user-info">
+                <span id="user-email"></span>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="health">🏥 Health</button>
+            <button class="tab-btn" data-tab="wealth">💰 Wealth</button>
+            <button class="tab-btn" data-tab="mindset">🧠 Mindset</button>
+            <button class="tab-btn" data-tab="relationships">❤️ Relationships</button>
+            <button class="tab-btn" data-tab="career">💼 Career</button>
+        </nav>
+
+        <main id="content">
+            <!-- Dynamic content loaded by JS -->
+        </main>
+
+        <footer>
+            <input type="text" id="command-input" placeholder="Type a command (e.g., 'add expense 500 for lunch')">
+            <button onclick="sendCommand()">Send</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
